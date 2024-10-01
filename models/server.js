@@ -8,6 +8,7 @@ class Server {
 
     routes(){
         this._app.get('/',require('../routes/pacienteRoutes'))
+        this._app.get('/:id',require('../routes/pacienteRoutes'))
         
     }
 
